@@ -1,0 +1,39 @@
+.navigation-container {
+  height: 120px;
+  padding-top: 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.gray-container{
+  padding-right: 14%;
+  padding-left: 14%;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.navigation-item {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+a { color: inherit; }
+
+.img-container {
+  background-color: #D3A5A7;
+}
+
+.logo {
+  height: 80px;
+}
+
+

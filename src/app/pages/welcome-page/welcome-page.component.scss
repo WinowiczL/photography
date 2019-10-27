@@ -1,0 +1,23 @@
+.first-page {
+  background-image: url("src/assets/4.JPG");
+  background-size: cover;
+  height: 100vh;
+}
+
+.second-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  height: 100vh;
+}
+
+.app-carousel{
+  width: 100%;
+}
+
+.third-page {
+  height: 100vh;
+  background-color: #D3A5A7;
+}
