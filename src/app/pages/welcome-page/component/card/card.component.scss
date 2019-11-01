@@ -1,0 +1,42 @@
+:host {
+  :hover {
+    cursor: pointer;
+    box-shadow: 0 0 1em #D3A5A7;
+    .card-img {
+      opacity: 1 !important;
+    }
+    .card-title {
+      box-shadow: none !important;
+      background-color: #D3A5A7;
+    }
+  }
+}
+
+.card {
+  max-height: 300px;
+  max-width: 400px;
+  border: 1px solid #D3A5A7;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 1em #C2C2C2;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  opacity: 0.5;
+}
+
+.card-content {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: none !important;
+  margin-top: 180px;
+}
+
+.card-title {
+  font-size: 20px;
+  color: white;
+  box-shadow: none !important;
+}
+
+

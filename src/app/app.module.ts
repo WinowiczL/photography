@@ -11,6 +11,9 @@ import { NavigationComponent } from './pages/welcome-page/navigation/navigation.
 import { JumbotronComponent } from './pages/welcome-page/jumbotron/jumbotron.component';
 import { CarouselComponent } from './pages/welcome-page/carousel/carousel.component';
 import {CarouselModule} from 'ngx-bootstrap';
+import { FirstContentComponent } from './pages/welcome-page/first-content/first-content.component';
+import { CardComponent } from './pages/welcome-page/component/card/card.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -19,13 +22,16 @@ import {CarouselModule} from 'ngx-bootstrap';
     WelcomePageComponent,
     NavigationComponent,
     JumbotronComponent,
-    CarouselComponent
+    CarouselComponent,
+    FirstContentComponent,
+    CardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    CarouselModule.forRoot()
+    CarouselModule.forRoot(),
+    ModalModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
