@@ -1,33 +1,21 @@
 <div class="navigation-container">
-  <div class="gray-container">
+  <div class="container">
     <div class="row">
       <div class="col-5 nav-options">
-        <div class="navigation-item">
-          <a href="#">Strona główna</a>
+        <div class="navigation-item" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+          Strona główna
         </div>
-        <div class="navigation-item">
-          <a class="" href="#">Portfolio</a>
-        </div>
-        <div class="navigation-item">
-          <a class="" href="#">Studio</a>
-        </div>
+        <div class="navigation-item" routerLink="/portfolio" routerLinkActive="active">Portfolio</div>
+        <div class="navigation-item">Studio</div>
       </div>
       <div class="col-2 logo-container">
-        <img src="/assets/logooo.png" class="logo"/>
+        <img src="/assets/logooo.png" class="logo" routerLink="/"/>
       </div>
       <div class="col-5 nav-options">
-        <div class="navigation-item">
-          <a class="" href="#">Oferta</a>
-        </div>
-        <div class="navigation-item">
-          <a class="" href="#">Przed sesja</a>
-        </div>
-        <div class="navigation-item">
-          <a class="" href="#">Kontakt</a>
-        </div>
-        <div class="navigation-item">
-          <a class="" href="#">O mnie</a>
-        </div>
+        <div class="navigation-item">Oferta</div>
+        <div class="navigation-item">Przed sesja</div>
+        <div class="navigation-item">Kontakt</div>
+        <div class="navigation-item">O mnie</div>
       </div>
     </div>
   </div>

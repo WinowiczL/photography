@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-first-content',
@@ -7,33 +7,69 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstContentComponent implements OnInit {
 
-  firstCardImageSrc = '/assets/carousel/3.JPG';
-  firstCardImageAlt = 'sesja ciążowa';
-  firstCardTitle = 'Sesja noworodkowa';
+  chosenSessionType = null;
+  sessions = [
+    {
+      imageSrc: '/assets/carousel/3.JPG',
+      imageAlt: 'sesja ciążowa',
+      cardTitle: 'Sesja noworodkowa',
+      details: {
+        text: 'Sesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowa'
+      }
+    },
+    {
+      imageSrc: '/assets/sessions/dziecieca.jpg',
+      imageAlt: 'sesja ciążowa',
+      cardTitle: 'Sesja dziecięca',
+      details: {
+        text: 'Sesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowa'
+      },
+    },
+    {
+      imageSrc: '/assets/sessions/natala2.jpg',
+      imageAlt: 'sesja ciążowa',
+      cardTitle: 'Sesja ciążowa',
+      details: {
+        text: 'Sesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowa'
+      },
+    },
+    {
+      imageSrc: '/assets/sessions/rodzinna.jpg',
+      imageAlt: 'sesja ciążowa',
+      cardTitle: 'Sesja rodzinna',
+      details: {
+        text: 'Sesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowa'
+      },
+    },
+    {
+      imageSrc: '/assets/sessions/portret2.jpg',
+      imageAlt: 'sesja ciążowa',
+      cardTitle: 'Sesja portretowa',
+      details: {
+        text: 'Sesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowa'
+      },
+    },
+    {
+      imageSrc: '/assets/sessions/slub2.jpg',
+      imageAlt: 'sesja ciążowa',
+      cardTitle: 'Reportaż ślubny',
+      details: {
+        text: 'Sesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowaSesja noworodkowa'
+      },
+    }
+  ];
 
-  secondCardImageSrc = '/assets/sessions/dziecieca.jpg';
-  secondCardImageAlt = 'sesja ciążowa';
-  secondCardTitle = 'Sesja dziecięca';
 
-  thirdCardImageSrc = '/assets/sessions/natala2.jpg';
-  thirdCardImageAlt = 'sesja ciążowa';
-  thirdCardTitle = 'Sesja ciążowa';
+  setChosenSessionType(cardTitle) {
+    this.chosenSessionType = this.sessions.find(session => session.cardTitle === cardTitle);
+  }
 
-  fourthCardImageSrc = '/assets/sessions/rodzinna.jpg';
-  fourthCardImageAlt = 'sesja ciążowa';
-  fourthCardTitle = 'Sesja rodzinna';
+  setEmptyChosenSession() {
+    this.chosenSessionType = null;
+  }
 
-  fifthCardImageSrc = '/assets/sessions/portret2.jpg';
-  fifthCardImageAlt = 'sesja ciążowa';
-  fifthCardTitle = 'Sesja portretowa';
-
-  sixthCardImageSrc = '/assets/sessions/slub2.jpg';
-  sixthCardImageAlt = 'sesja ciążowa';
-  sixthCardTitle = 'Reportaż ślubny';
-
-
-
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

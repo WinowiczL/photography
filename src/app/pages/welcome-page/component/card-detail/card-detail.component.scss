@@ -1,0 +1,47 @@
+.image {
+  width: 100%;
+}
+
+.arrow {
+  height: 24px;
+  margin-right: 10px;
+}
+
+.text{
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.go-back {
+  display: flex;
+  justify-content: start;
+  text-align: center;
+
+  h5{
+    text-align: center;
+    margin: 0;
+  }
+
+  :hover {
+    cursor: pointer;
+    color: #D3A5A7;
+
+    path {
+      fill: #D3A5A7;
+    }
+  }
+}
+
+.portfolio-button {
+  margin-top: 6px;
+  color: #D3A5A7;
+  width: 100%;
+  border: 1px solid #D3A5A7;
+  border-radius: 0;
+}
+
+.portfolio-button:hover {
+  background-color: #D3A5A7;
+  color: white;
+}

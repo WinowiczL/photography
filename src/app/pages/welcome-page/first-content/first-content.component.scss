@@ -1,32 +1,5 @@
-
-.title {
-  display: flex;
-  text-align: center;
-  padding-top: 150px;
-}
-
-h1 {
-  color: #D3A5A7;
-  font-size: 40px;
-}
-
-.content {
-  margin-top: 20px;
-}
-
-$separator-size: 3px;
-$separator-border-style: solid;
-$separator-border-color: #D3A5A7;
-
-.separator {
-  border: 0;
-}
-
-.separator--line {
-  border-bottom: $separator-size $separator-border-style $separator-border-color;
-  left: 0;
-  width: 0;
-  animation: separator-width 3s ease-out forwards;
+.break {
+  margin-top: 30px;
 }
 
 @keyframes separator-width {
@@ -37,4 +10,5 @@ $separator-border-color: #D3A5A7;
     width: 100%;
   }
 }
+
 

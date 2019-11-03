@@ -1,5 +1,5 @@
-import {Component, Input, OnInit, TemplateRef} from '@angular/core';
-import {BsModalRef, BsModalService, ModalOptions} from 'ngx-bootstrap';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
+import {BsModalService} from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-card',
@@ -17,17 +17,15 @@ export class CardComponent {
   @Input()
   cardTitle;
 
-  modalRef: BsModalRef;
-  config = {
-    animated: true,
-    class: 'gray modal-lg'
-  };
+  @Output()
+  chosenSessionType = new EventEmitter<string>();
 
-  constructor(private modalService: BsModalService) {
+  constructor() {
+
   }
 
-  openModal(template: TemplateRef<any>) {
-    this.modalRef = this.modalService.show(template, this.config);
+  setChosenSessiontype(cardTitle) {
+    this.chosenSessionType.emit(cardTitle);
   }
 
 }

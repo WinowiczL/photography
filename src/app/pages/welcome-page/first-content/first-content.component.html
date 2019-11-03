@@ -1,34 +1,32 @@
-<div class="title">
+<div class="second-background">
+  <div class="title basic-color">
+    {{chosenSessionType?.cardTitle ? chosenSessionType.cardTitle : 'Wybierz interesującą cię sesje'}}
+  </div>
   <div class="container">
-    <h1>Wybierz interesującą cię sesje</h1>
-    <hr class="separator separator--line"/>
-    <div class="row">
-      <div class="col-4">
-        <app-card [imageSource]="firstCardImageSrc" [cardTitle]="firstCardTitle"
-                  [imageAlt]="firstCardImageAlt"></app-card>
+    <hr class="separator-line-basic"/>
+    <div *ngIf="!chosenSessionType; else details">
+      <div class="row break">
+        <div class="col-4" *ngFor="let session of sessions.slice(0,3)">
+          <app-card
+            [imageSource]="session.imageSrc" [cardTitle]="session.cardTitle"
+            [imageAlt]="session.imageAlt" (chosenSessionType)="setChosenSessionType($event)"></app-card>
+        </div>
       </div>
-      <div class="col-4">
-        <app-card [imageSource]="secondCardImageSrc" [cardTitle]="secondCardTitle"
-                  [imageAlt]="secondCardImageAlt"></app-card>
-      </div>
-      <div class="col-4">
-        <app-card [imageSource]="thirdCardImageSrc" [cardTitle]="thirdCardTitle"
-                  [imageAlt]="thirdCardImageAlt"></app-card>
-      </div>
-    </div>
-    <div class="row content">
-      <div class="col-4">
-        <app-card [imageSource]="fourthCardImageSrc" [cardTitle]="fourthCardTitle"
-                  [imageAlt]="fourthCardImageAlt"></app-card>
-      </div>
-      <div class="col-4">
-        <app-card [imageSource]="sixthCardImageSrc" [cardTitle]="sixthCardTitle"
-                  [imageAlt]="sixthCardImageAlt"></app-card>
-      </div>
-      <div class="col-4">
-        <app-card [imageSource]="fifthCardImageSrc" [cardTitle]="fifthCardTitle"
-                  [imageAlt]="fifthCardImageAlt"></app-card>
+      <div class="row break">
+        <div class="col-4" *ngFor="let session of sessions.slice(3,6)">
+          <app-card
+            [imageSource]="session.imageSrc" [cardTitle]="session.cardTitle"
+            [imageAlt]="session.imageAlt" (chosenSessionType)="setChosenSessionType($event)"></app-card>
+        </div>
       </div>
     </div>
   </div>
+  <ng-template #details>
+    <app-card-detail
+      [title]="chosenSessionType.details.text"
+      [imageSrc]="chosenSessionType.imageSrc"
+      [firstText]="chosenSessionType.details.text"
+      (backToEmitter)="setEmptyChosenSession()"
+    ></app-card-detail>
+  </ng-template>
 </div>
