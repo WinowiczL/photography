@@ -2,14 +2,15 @@
   color: white;
   background: none;
   position: absolute;
-  bottom: 50px;
-  width: 400px;
-  padding-left:40px;
+  bottom: 0;
+
+  width: 100%;
 }
 
 .text{
+  padding-left:40px;
   opacity: 0.8;
-  padding: 0;
+  width: 400px;
 }
 
 h1{
@@ -37,7 +38,7 @@ p {
     width: 0;
   }
   100% {
-    min-width: 500px;
+    width: 10%;
   }
 }
 

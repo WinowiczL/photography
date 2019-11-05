@@ -2,7 +2,12 @@
   <h1>Profesjonalne sesje zdjęciowe</h1>
   <hr class="separator separator--line"/>
   <p>Fotografia rodzinna, ciążowa i noworodkowa</p>
+  <button type="button" class="btn portfolio-button" routerLink="/portfolio">
+    Sprawdź portfolio
+  </button>
 </div>
-<button type="button" class="btn portfolio-button" routerLink="/portfolio">
-  Sprawdź portfolio
-</button>
+
+<div class="row arrow-content">
+  <img src="assets/down-arrow.svg" class="down-arrow"
+       onClick="document.getElementById('first_content').scrollIntoView({ behavior: 'smooth', block: 'center' });"/>
+</div>

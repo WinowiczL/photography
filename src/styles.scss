@@ -55,6 +55,25 @@ body {
   border-bottom: 3px solid #D3A5A7;
 }
 
+.arrow-content{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto 0 1%;
+}
+
+.down-arrow {
+  height: 80px;
+}
+
+.down-arrow img svg path {
+  fill: white !important;
+}
+
+.down-arrow:hover {
+  cursor: pointer;
+}
+
 *:focus {
   outline: none;
 }
