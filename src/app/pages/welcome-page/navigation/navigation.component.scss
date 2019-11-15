@@ -1,3 +1,5 @@
+@import "../../../../assets/styles/custom-styles";
+
 .navigation-container {
   margin-top: 60px;
   position: absolute;
@@ -15,32 +17,29 @@
 }
 
 .navigation-item {
-  color: white;
+  color: $whiteColor;
   display: flex;
   justify-content: center;
   align-items: center;
   white-space: nowrap;
   border-bottom: 2px solid transparent;
-}
-
-.navigation-item:hover {
-  box-sizing: border-box;
-  border-bottom: 2px solid white;
-  cursor: pointer;
+  &:hover {
+    box-sizing: border-box;
+    border-bottom: 2px solid $whiteColor;
+    cursor: pointer;
+  }
 }
 
 .active {
-  padding: 14px;
-  background-color: white;
-  color: #D3A5A7;
-  border: 1px solid transparent !important;
+  color: $whiteColor;
+  border-bottom: 2px solid $whiteColor !important;
 }
 
 .logo {
   height: 140px;
-}
-.logo:hover {
-  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .logo-container {

@@ -1,14 +1,18 @@
+@import "../../../../../assets/styles/custom-styles";
+
 :host {
   :hover {
     cursor: pointer;
-    box-shadow: 0 0 1em #D3A5A7;
+    box-shadow: 0 0 1em $boxShadowPrimary;
+
     .card-img {
       opacity: 1 !important;
     }
+
     .card-title {
       box-shadow: none !important;
-      background-color: #D3A5A7;
-      border: 1px solid white;
+      background-color: $primaryColor;
+      border: 1px solid $whiteColor;
     }
   }
 }
@@ -16,12 +20,12 @@
 .card {
   max-height: 300px;
   max-width: 400px;
-  border: 1px solid #D3A5A7;
+  border: 1px solid $primaryColor;
   background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 1em #C2C2C2;
+  box-shadow: 0 0 1em $secondaryColor;
 }
 
-.card-img-overlay{
+.card-img-overlay {
   display: grid;
   align-items: end;
 }
@@ -37,9 +41,9 @@
 
 .card-title {
   font-size: 20px;
-  color: white;
+  color: $whiteColor;
   margin: 0;
-  padding:4px;
+  padding: 4px;
   text-align: center;
 }
 

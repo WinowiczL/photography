@@ -1,3 +1,5 @@
+@import "../../../../../assets/styles/custom-styles";
+
 .image {
   width: 100%;
   border-radius: 10px;
@@ -26,23 +28,23 @@
 
   :hover {
     cursor: pointer;
-    color: #D3A5A7;
+    color: $primaryColor;
 
     path {
-      fill: #D3A5A7;
+      fill: $primaryColor;
     }
   }
 }
 
 .portfolio-button {
   margin-top: 6px;
-  color: #D3A5A7;
+  color: $primaryColor;
   width: 100%;
-  border: 1px solid #D3A5A7;
+  border: 1px solid $primaryColor;
   border-radius: 0;
 }
 
 .portfolio-button:hover {
-  background-color: #D3A5A7;
+  background-color: $primaryColor;
   color: white;
 }

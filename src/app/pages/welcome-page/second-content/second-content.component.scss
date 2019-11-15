@@ -1,8 +1,10 @@
+@import "../../../../assets/styles/custom-styles";
+
 .text {
   display: flex;
   align-items: center;
   text-align: center;
-  color: white;
+  color: $whiteColor;
   font-size: 24px;
   height: 100%;
 }
@@ -13,8 +15,8 @@ img {
 }
 
 .portfolio-button {
-  color:white;
-  border: 1px solid white;
+  color: $whiteColor;
+  border: 1px solid $whiteColor;
   width: 100%;
   height: 60px;
   margin-left: 15px;
@@ -23,9 +25,9 @@ img {
 }
 
 .portfolio-button:hover {
-  background-color: white;
-  color: #D3A5A7;
-  border: 1px solid #D3A5A7;
+  background-color: $whiteColor;
+  color: $primaryColor;
+  border: 1px solid $primaryColor;
 }
 
 

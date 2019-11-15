@@ -1,5 +1,4 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {BsModalService} from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-card',

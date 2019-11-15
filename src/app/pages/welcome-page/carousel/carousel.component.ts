@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {carouselImagePath} from '../../../shared/images';
 
 @Component({
   selector: 'app-carousel',
@@ -14,10 +15,10 @@ export class CarouselComponent {
   myInterval = 2000;
 
   slides = [
-    {image: 'assets/carousel/1.JPG'},
-    {image: 'assets/carousel/2.JPG'},
-    {image: 'assets/carousel/3.JPG'},
-    {image: 'assets/carousel/4.JPG'},
+    {image: carouselImagePath.carouselImage1.imagePath},
+    {image: carouselImagePath.carouselImage2.imagePath},
+    {image: carouselImagePath.carouselImage3.imagePath},
+    {image: carouselImagePath.carouselImage4.imagePath},
   ];
 
   onSlideRangeChange(indexes: number[]): void {

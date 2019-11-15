@@ -63,15 +63,10 @@ body {
 }
 
 .down-arrow {
-  height: 80px;
-}
-
-.down-arrow img svg path {
-  fill: white !important;
-}
-
-.down-arrow:hover {
-  cursor: pointer;
+  width: 80px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 *:focus {
