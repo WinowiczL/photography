@@ -1,11 +1,17 @@
 <div class="row">
   <div class="col-7 text">
-    <h5>{{firstText}}</h5>
+    <h5>{{contentToShow === 'offer' ? offerText : prepareText}}</h5>
   </div>
   <div class="col-5">
     <img src="{{imageSrc}}" class="image">
+    <button type="button" class="btn portfolio-button" (click)="onOfferContentClick()">
+      Cennik
+    </button>
+    <button type="button" class="btn portfolio-button" (click)="onPrepareContentClick()">
+      Przygotowanie do sesji
+    </button>
     <button type="button" class="btn portfolio-button" routerLink="/portfolio">
-      Jak się przygotować do sesji?
+      Portfolio
     </button>
   </div>
 </div>

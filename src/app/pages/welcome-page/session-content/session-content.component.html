@@ -1,4 +1,4 @@
-<div class="second-background" id="first_content">
+<div class="second-background" id="sesje">
   <div class="title basic-color">
     {{chosenSessionType?.cardTitle ? chosenSessionType.cardTitle : 'Wybierz interesującą cię sesje'}}
   </div>
@@ -25,13 +25,14 @@
     <app-card-detail
       [title]="chosenSessionType.details.text"
       [imageSrc]="chosenSessionType.imageSrc"
-      [firstText]="chosenSessionType.details.text"
+      [prepareText]="chosenSessionType.details.text"
+      [offerText]="chosenSessionType.details.offer"
       (backToEmitter)="setEmptyChosenSession()"
     ></app-card-detail>
   </ng-template>
   <div class="row arrow-content">
-    <img src="assets/down-arrow.svg" class="down-arrow"
-         onClick="document.getElementById('second_content').scrollIntoView({ behavior: 'smooth', block: 'center' });"/>
+    <img src="assets/pink-down-arrow.svg" class="down-arrow"
+         onClick="document.getElementById('o_mnie').scrollIntoView({ behavior: 'smooth', block: 'center' });"/>
   </div>
 </div>
 

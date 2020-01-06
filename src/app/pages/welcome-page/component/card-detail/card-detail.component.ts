@@ -14,13 +14,25 @@ export class CardDetailComponent {
   imageSrc;
 
   @Input()
-  firstText;
+  prepareText;
+
+  @Input()
+  offerText;
 
   @Output()
   backToEmitter = new EventEmitter();
+
+  contentToShow = 'offer';
 
   onClick(event) {
     this.backToEmitter.emit(event);
   }
 
+  onPrepareContentClick() {
+    this.contentToShow = 'prepare';
+  }
+
+  onOfferContentClick() {
+    this.contentToShow = 'offer';
+  }
 }

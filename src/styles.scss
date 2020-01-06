@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import './assets/styles/colors';
 
 body {
   margin: 0;
@@ -9,7 +10,7 @@ body {
 
 .basic-background {
   height: 100vh;
-  background-color: #D3A5A7;
+  background-color: $primaryColor;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -18,7 +19,7 @@ body {
 
 .second-background {
   height: 100vh;
-  background-color: white;
+  background-color: $whiteColor;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -32,11 +33,11 @@ body {
 }
 
 .basic-color {
-  color: #D3A5A7;
+  color: $primaryColor;
 }
 
 .second-color {
-  color: white;
+  color: $whiteColor;
 }
 
 .separator-line-second {
@@ -52,7 +53,7 @@ body {
   left: 0;
   width: 0;
   animation: separator-width 3s ease-out forwards;
-  border-bottom: 3px solid #D3A5A7;
+  border-bottom: 3px solid $primaryColor;
 }
 
 .arrow-content{

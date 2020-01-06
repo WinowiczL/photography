@@ -1,3 +1,4 @@
+
 export const carouselImagePath = {
   carouselImage1: {
     imagePath: 'assets/carousel/1.JPG',

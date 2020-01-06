@@ -12,11 +12,17 @@
         <img src="/assets/logooo.png" class="logo" routerLink="/"/>
       </div>
       <div class="col-5 nav-options">
-        <div class="navigation-item">Oferta</div>
-        <div class="navigation-item">Przed sesja</div>
-        <div class="navigation-item">Kontakt</div>
-        <div class="navigation-item">O mnie</div>
+        <div class="navigation-item" routerLink="/" fragment="sesje" onClick="document.getElementById('sesje').scrollIntoView({ behavior: 'smooth', block: 'center' });">Oferta</div>
+        <div class="navigation-item" routerLink="/" fragment="sesje" onClick="document.getElementById('sesje').scrollIntoView({ behavior: 'smooth', block: 'center' });">Przed sesją</div>
+        <div class="navigation-item" routerLink="/kontakt" routerLinkActive="active">Kontakt</div>
+        <div class="navigation-item" routerLink="/" fragment="o_mnie" onClick="document.getElementById('o_mnie').scrollIntoView({ behavior: 'smooth', block: 'center' });">O mnie</div>
       </div>
     </div>
   </div>
+    <a href="https://www.facebook.com/elizamakiejfotografia" target="_blank">
+      <img src="assets/facebook.svg" class="icon-facebook">
+    </a>
+    <a href="https://www.instagram.com/elizamakiej.fotografia/?hl=pl" target="_blank">
+      <img src="assets/instagram.svg" class="icon-instagram"/>
+    </a>
 </div>
