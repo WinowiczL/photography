@@ -19,12 +19,4 @@ export class CardComponent {
   @Output()
   chosenSessionType = new EventEmitter<string>();
 
-  constructor() {
-
-  }
-
-  setChosenSessiontype(cardTitle) {
-    this.chosenSessionType.emit(cardTitle);
-  }
-
 }

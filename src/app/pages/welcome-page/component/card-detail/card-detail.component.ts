@@ -24,10 +24,6 @@ export class CardDetailComponent {
 
   contentToShow = 'offer';
 
-  onClick(event) {
-    this.backToEmitter.emit(event);
-  }
-
   onPrepareContentClick() {
     this.contentToShow = 'prepare';
   }

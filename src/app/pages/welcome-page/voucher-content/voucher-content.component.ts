@@ -7,4 +7,9 @@ import {Component} from '@angular/core';
 })
 export class VoucherContentComponent {
 
+  playing = false;
+
+  onClick() {
+    this.playing = !this.playing;
+  }
 }

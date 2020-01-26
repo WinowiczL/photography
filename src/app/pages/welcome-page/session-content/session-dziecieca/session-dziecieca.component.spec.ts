@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LocationPageComponent } from './location-page.component';
+import { SessionDzieciecaComponent } from './session-dziecieca.component';
 
-describe('LocationPageComponent', () => {
-  let component: LocationPageComponent;
-  let fixture: ComponentFixture<LocationPageComponent>;
+describe('SessionDzieciecaComponent', () => {
+  let component: SessionDzieciecaComponent;
+  let fixture: ComponentFixture<SessionDzieciecaComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LocationPageComponent ]
+      declarations: [ SessionDzieciecaComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LocationPageComponent);
+    fixture = TestBed.createComponent(SessionDzieciecaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,0 +1,18 @@
+<div class="second-background" id="sesje">
+  <div class="title basic-color">Sesja rodzinna</div>
+  <div routerLink="/" fragment="sesje">go back</div>
+  <div class="container">
+    <hr class="separator-line-basic"/>
+    <app-card-detail
+      [title]="sessionDetails.details.text"
+      [imageSrc]="sessionDetails.imageSrc"
+      [prepareText]="sessionDetails.details.text"
+      [offerText]="sessionDetails.details.offer"
+    ></app-card-detail>
+  </div>
+  <div class="row arrow-content">
+    <img src="./assets/pink-down-arrow.svg" class="down-arrow"
+         onClick="document.getElementById('studio').scrollIntoView({ behavior: 'smooth', block: 'center' });"/>
+  </div>
+</div>
+

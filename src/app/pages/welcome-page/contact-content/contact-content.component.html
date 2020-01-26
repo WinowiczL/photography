@@ -1,9 +1,12 @@
-<div class="basic-background">
+<div class="second-background" id="kontakt">
+  <div class="title basic-color">Kontakt</div>
   <div class="container">
-    <div class="information">Jeżeli masz jakies pytanie, uzupełnij formularz, może odpowiem :D</div>
-    <hr class="separator-line-second"/>
+    <div class="information text-center">Jeśli jesteś zainteresowany sesją zdjęciową lub masz dodatkowe pytania,
+      serdecznie zapraszam do kontaktu.<br/>Z chęcią udzielę na nie odpowiedzi i rozwieje wszystkie Twoje wątpliwości.
+    </div>
+    <hr class="separator-line-basic"/>
     <form [formGroup]="modelForm" (ngSubmit)="onSubmit(modelForm)">
-      <div class="form-group row">
+      <div class="form-group row justify-content-center">
         <label for="name" class="col-sm-2 col-form-label">Imie i nazwisko</label>
         <div class="col-sm-6">
           <input type="text"
@@ -13,7 +16,7 @@
                  formControlName="name">
         </div>
       </div>
-      <div class="form-group row">
+      <div class="form-group row justify-content-center">
         <label for="email" class="col-sm-2 col-form-label">Email</label>
         <div class="col-sm-6">
           <input type="email"
@@ -23,19 +26,19 @@
                  formControlName="email">
         </div>
       </div>
-      <div class="form-group row">
-        <label for="telephone" class="col-sm-2 col-form-label">Nr. telefonu</label>
+      <div class="form-group row justify-content-center">
+        <label for="telephone" class="col-sm-2 col-form-label">Nr telefonu<span> (opcjonalne)</span></label>
         <div class="col-sm-6">
           <input type="text"
                  class="form-control"
                  id="telephone"
-                 placeholder="Opcjonalne"
+                 placeholder="Nr telefonu"
                  formControlName="telephone"
           >
         </div>
       </div>
-      <div class="form-group row">
-        <label for="question" class="col-sm-2 col-form-label">Treść pytania</label>
+      <div class="form-group row justify-content-center">
+        <label for="question" class="col-sm-2 col-form-label">Wiadomość</label>
         <div class="col-sm-6">
           <textarea rows="6"
                     class="form-control"
@@ -46,9 +49,9 @@
         </div>
       </div>
       <fieldset class="form-group">
-        <div class="row">
+        <div class="row justify-content-center">
           <legend class="col-form-label col-sm-2 pt-0">Studio</legend>
-          <div class="col-sm-10">
+          <div class="col-sm-6">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
               <label class="form-check-label" for="gridRadios1">

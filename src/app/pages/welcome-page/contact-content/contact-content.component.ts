@@ -1,12 +1,12 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 @Component({
-  selector: 'app-contact-page',
-  templateUrl: './contact-page.component.html',
-  styleUrls: ['./contact-page.component.scss']
+  selector: 'app-contact-content',
+  templateUrl: './contact-content.component.html',
+  styleUrls: ['./contact-content.component.scss']
 })
-export class ContactPageComponent implements OnInit {
+export class ContactContentComponent implements OnInit {
 
   modelForm: FormGroup;
 
@@ -27,3 +27,4 @@ export class ContactPageComponent implements OnInit {
     console.log(form.value);
   }
 }
+
